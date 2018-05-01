@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "integration-test": "TEST_MODE=handler ./node_modules/.bin/mocha tests/test_cases --reporter spec",
-    "acceptance-test": "TEST_MODE=http TEST_ROOT=https://8w89zpve47.execute-api.eu-central-1.amazonaws.com/dev ./node_modules/.bin/mocha tests/test_cases --reporter spec"
+    "integration-test": "env TEST_MODE=handler ./node_modules/.bin/mocha tests/test_cases --reporter spec",
+    "acceptance-test": "env TEST_MODE=http TEST_ROOT=https://8w89zpve47.execute-api.eu-central-1.amazonaws.com/dev ./node_modules/.bin/mocha tests/test_cases --reporter spec"
   },
   "author": "",
   "license": "ISC",
